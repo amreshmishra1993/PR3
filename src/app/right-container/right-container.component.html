@@ -1,0 +1,78 @@
+<div [ngSwitch]="item" class="mg-top">
+  <div *ngSwitchCase="'Header'">
+    <div class="page-header">
+      <h1>{{ item }}</h1>
+    </div>
+    <p>This is a {{ item }} Component</p>
+  </div>
+  <div *ngSwitchCase="'Table'">
+    <h1>{{ item }}</h1>
+    <p>This is a {{ item }} Component</p>
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Age</th>
+          <th>City</th>
+          <th>Country</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Amresh</td>
+          <td>Mishra</td>
+          <td>27</td>
+          <td>Mumbai</td>
+          <td>India</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div *ngSwitchCase="'Footer'">
+    <h1>{{ item }}</h1>
+    <p>This is a {{ item }} Component</p>
+    <div class="panel-footer footer-position">{{ item }} Component</div>
+  </div>
+  <div *ngSwitchCase="'Time'">
+    <h1>{{ item }}</h1>
+    <p>This is a {{ item }} Component</p>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="form-group">
+            <div class="input-group date" id="datetimepicker2">
+              <input type="date" class="form-control" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div *ngSwitchCase="'Spinner'">
+    <span class="glyphicon glyphicon-refresh"></span>
+    <h1>{{ item }}</h1>
+    <p>This is a {{ item }} Component</p>
+  </div>
+  <div *ngSwitchCase="'Textbox'">
+    <h1>{{ item }}</h1>
+    <p>This is a {{ item }} Component</p>
+    <input type="text" class="form-control" />
+  </div>
+  <div *ngSwitchCase="'Button'">
+    <button btn btn-primary>Click Me!!</button>
+    <h1>{{ item }}</h1>
+    <p>This is a {{ item }} Component</p>
+  </div>
+  <div *ngSwitchCase="'Divider'">
+    <h1>{{ item }}</h1>
+    <div class="divider"></div>
+    <p>This is a {{ item }} Component</p>
+  </div>
+  <div *ngSwitchCase="'Mask'">
+    <h1>{{ item }}</h1>
+    <p>This is a {{ item }} Component</p>
+  </div>
+</div>
